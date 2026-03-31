@@ -1,0 +1,26 @@
+name: Sub-Task
+
+description: Create a new sub-task to track progress on specific tasks.
+
+title: "Sub-task: {subtask title}"
+
+body: |
+  ### Status
+
+  - [ ] Planned
+  - [ ] In Progress
+  - [ ] Blocked
+  - [ ] Carried Forward
+
+  ### Assignee
+
+  - Assignee: @USERNAME (person facing blocker)
+
+  ### Description
+
+  A brief description of what needs to be done.
+
+  ### Tasks
+
+  - [ ] Task 1
+  - [ ] Task 2
