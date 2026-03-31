@@ -1,12 +1,1 @@
-name: Daily Task
-description: Template for daily tasks
-
----
-**Daily Task for ** {{gitHubUser}}** on ** {{date}}**  
-- **Tasks:**
-  - [ ] Task 1
-  - [ ] Task 2
-- **Blockers:**
-  - Name: 
-    Description: 
-    Since: 
+name: "Daily Task (WBR) — Start of Day"\ndescription: "One issue per person per day. Used for daily execution + weekly WBR reporting."\ntitle: "YYYY-MM-DD — @<assignee> — Daily Plan"\nlabels: ["wbr", "type: daily-task"]\nbody:\n  - type: input\n    id: work_date\n    attributes:\n      label: "Work Date (YYYY-MM-DD)"\n      placeholder: "2026-03-31"\n    validations:\n      required: true\n\n  - type: input\n    id: assignee\n    attributes:\n      label: "Assignee (person facing blocker)"\n      description: "Put your GitHub username. Example: @Pavankumar-Prabhu"\n      placeholder: "@username"\n    validations:\n      required: true\n\n  - type: dropdown\n    id: status\n    attributes:\n      label: "Status (start of day)"\n      options:\n        - planned\n        - in progress\n        - blocked\n        - carried forward\n    validations:\n      required: true\n\n  - type: textarea\n    id: planned_work\n    attributes:\n      label: "Planned Work (bullet list)"\n      placeholder: |\n        - Item 1 (link issue/PR if any)\n        - Item 2\n        - Item 3\n    validations:\n      required: true\n\n  - type: textarea\n    id: expected_outcomes\n    attributes:\n      label: "Expected Outcomes / Deliverables"\n      placeholder: |\n        - Deliverable 1\n        - Deliverable 2\n    validations:\n      required: false\n\n  - type: textarea\n    id: blockers\n    attributes:\n      label: "Blockers (only if status = blocked)"\n      description: "Always name the assignee (the person facing the blocker)."\n      placeholder: |\n        Assignee (person facing blocker): @username\n        Blocker description: <what is blocking?>\n        Since (YYYY-MM-DD): 2026-03-31\n    validations:\n      required: false
