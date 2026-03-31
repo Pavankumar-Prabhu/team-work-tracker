@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "Team Work Tracker — Workflow (WBR)"
+    url: "https://github.com/Pavankumar-Prabhu/team-work-tracker/blob/main/docs/WORKFLOW.md"
+    about: "How to create Daily Tasks, post EOD updates, handle blockers, and carry-forward (Mon–Fri)."
