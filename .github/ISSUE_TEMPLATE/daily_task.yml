@@ -1,0 +1,12 @@
+name: Daily Task
+description: Template for daily tasks
+
+---
+**Daily Task for ** {{gitHubUser}}** on ** {{date}}**  
+- **Tasks:**
+  - [ ] Task 1
+  - [ ] Task 2
+- **Blockers:**
+  - Name: 
+    Description: 
+    Since: 
